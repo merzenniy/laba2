@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="520.0" style="-fx-background-color: fafafa;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CheckLogsMenuController">
+   <children>
+      <TableView fx:id="tableView" layoutX="30.0" layoutY="96.0" prefHeight="230.0" prefWidth="460.0" />
+      <ChoiceBox fx:id="choiceBox" layoutX="339.0" layoutY="51.0" prefWidth="150.0" />
+      <Button fx:id="backButton" layoutX="30.0" layoutY="344.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: #b52828;" text="Повернутися назад" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font></Button>
+      <TextField layoutX="30.0" layoutY="51.0" style="-fx-background-color: fafafa;" text="Оберіть працівника">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font>
+      </TextField>
+      <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="520.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="554.0" prefWidth="447.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AbonentOneController">
+   <children>
+      <TableView fx:id="tableView" layoutX="35.0" layoutY="177.0" prefHeight="200.0" prefWidth="379.0" />
+      <ChoiceBox fx:id="tarifEntityChoiceBox" layoutX="126.0" layoutY="127.0" prefHeight="25.0" prefWidth="180.0" />
+      <Label fx:id="nLabel" layoutX="145.0" layoutY="41.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="sLabel" layoutX="21.0" layoutY="44.0" text="Label">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font></Label>
+      <Label fx:id="fLabel" layoutX="243.0" layoutY="41.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="tLabel" layoutX="349.0" layoutY="41.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button layoutX="15.0" layoutY="421.0" mnemonicParsing="false" onAction="#changeTariff" prefHeight="51.0" prefWidth="418.0" style="-fx-background-color: #b52828" text="Змінити тариф">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font></Button>
+      <Button layoutX="15.0" layoutY="482.0" mnemonicParsing="false" onAction="#add" prefHeight="51.0" prefWidth="418.0" style="-fx-background-color: #b52828" text="Додати показання лічильника">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

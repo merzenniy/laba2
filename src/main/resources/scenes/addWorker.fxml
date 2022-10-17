@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddWorkerController">
+   <left>
+      <AnchorPane disable="true" opacity="0.9" prefHeight="400.0" prefWidth="226.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="300.0" fitWidth="187.0" layoutX="35.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/first.jpg" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="312.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="fTextField" layoutX="32.0" layoutY="82.0" promptText="Ім'я користувача">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </TextField>
+            <Label layoutX="60.0" layoutY="25.0" lineSpacing="12.0" text="Новий користувач" textFill="#545151">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow height="28.15" radius="26.682499999999997" spread="0.16" width="80.58">
+                     <color>
+                        <Color red="0.9394736886024475" green="0.09220760315656662" blue="0.09220760315656662" />
+                     </color></DropShadow>
+               </effect>
+            </Label>
+            <TextField fx:id="iTextField" layoutX="32.0" layoutY="124.0" promptText="Прізвише користувача">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font></TextField>
+            <TextField fx:id="oTextField" layoutX="32.0" layoutY="166.0" promptText="По батькові користувача">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="phoneTextfield" layoutX="32.0" layoutY="227.0" promptText="Телефон">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="loginTextField" layoutX="32.0" layoutY="267.0" promptText="Логігн">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </TextField>
+            <Button layoutX="81.0" layoutY="325.0" mnemonicParsing="false" onAction="#addNewUser" prefHeight="34.0" prefWidth="130.0" style="-fx-background-color: #b52828;" text="Додати" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+   </right>
+   <top>
+      <MenuBar style="-fx-opacity: 0.8;" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu text="Назад">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="В главную">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

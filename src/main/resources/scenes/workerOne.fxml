@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="387.0" prefWidth="520.0" style="-fx-background-color: fafafa;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WorkerOneController">
+   <children>
+      <TextField fx:id="typetf" layoutX="14.0" layoutY="79.0" prefHeight="25.0" prefWidth="196.0" promptText="Тип работ">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="adresstf" layoutX="14.0" layoutY="121.0" prefHeight="25.0" prefWidth="196.0" promptText="Адреса">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="losstf" layoutX="14.0" layoutY="166.0" prefHeight="25.0" prefWidth="196.0" promptText="Втрати">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="descriptiontf" layoutX="14.0" layoutY="204.0" prefHeight="25.0" prefWidth="196.0" promptText="Опис">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font></TextField>
+      <ChoiceBox fx:id="listtf" layoutX="276.0" layoutY="273.0" opacity="0.78" prefHeight="26.0" prefWidth="196.0" style="-fx-background-color: ;" />
+      <DatePicker fx:id="datetf" layoutX="14.0" layoutY="274.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="196.0" promptText="Дата" />
+      <Button layoutX="176.0" layoutY="337.0" mnemonicParsing="false" onAction="#addNewAccident" prefWidth="168.0" style="-fx-background-color: #b52828;" text="Нова пригода " textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font></Button>
+      <ImageView fitHeight="143.0" fitWidth="223.0" layoutX="262.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Card.png" />
+         </image>
+      </ImageView>
+      <TextField alignment="CENTER" cacheShape="false" centerShape="false" disable="true" layoutX="261.0" layoutY="230.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="26.0" prefWidth="223.0" scaleShape="false" style="-fx-background-color: fafafa;" text="Зробіть вибір">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font>
+      </TextField>
+      <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="520.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

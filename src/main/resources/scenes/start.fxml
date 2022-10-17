@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StartController">
+   <children>
+      <Button layoutX="399.0" layoutY="352.0" mnemonicParsing="false" onAction="#login" style="-fx-background-color: #b52828;" text="Увійти" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font></Button>
+      <TextField fx:id="logintf" layoutX="276.0" layoutY="312.0" prefHeight="26.0" prefWidth="187.0" promptText="Логін" AnchorPane.leftAnchor="276.0" AnchorPane.topAnchor="312.0">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="passwordtf" layoutX="38.0" layoutY="312.0" prefHeight="26.0" prefWidth="187.0" promptText="Пароль">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font></TextField>
+      <RadioButton fx:id="adminButton" layoutX="275.0" layoutY="356.0" mnemonicParsing="false" text="Адмін" textAlignment="JUSTIFY" textFill="#b52828">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="fsdf" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="workerButton" layoutX="160.0" layoutY="356.0" mnemonicParsing="false" text="Працівник" textFill="#b52828" toggleGroup="$fsdf">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="abonentButton" layoutX="46.0" layoutY="356.0" mnemonicParsing="false" text="Абонент" textFill="#b52828" toggleGroup="$fsdf">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font></RadioButton>
+      <ImageView fitHeight="251.0" fitWidth="316.0" layoutX="103.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Group%20142.png" />
+         </image>
+      </ImageView>
+      <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="520.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddPokazanieController">
+   <children>
+      <Button layoutX="359.0" layoutY="286.0" mnemonicParsing="false" onAction="#add" prefHeight="41.0" prefWidth="161.0" style="-fx-background-color: #b52828" text="Додати">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="91.0" layoutY="286.0" mnemonicParsing="false" onAction="#back" prefHeight="41.0" prefWidth="161.0" style="-fx-background-color: #b52828" text="Повернутися назад">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="215.0" layoutY="33.0" lineSpacing="12.0" text="Додати показання" textFill="#545151">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow height="28.15" radius="26.682499999999997" spread="0.16" width="80.58">
+               <color>
+                  <Color red="0.9394736886024475" green="0.09220760315656662" blue="0.09220760315656662" />
+               </color></DropShadow>
+         </effect>
+      </Label>
+      <TextField fx:id="pokTF" layoutX="91.0" layoutY="139.0" prefHeight="25.0" prefWidth="161.0" promptText="Показання лічильника" />
+      <DatePicker fx:id="datePicker" layoutX="353.0" layoutY="139.0" promptText="Оберіть дату" />
+   </children>
+</AnchorPane>
